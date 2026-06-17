@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > a> button{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    width: 7rem;
+    height: 2rem;
+    background-color: rgba(51, 49, 49, 0.267);
+    border: none;
+    transition: 1s;
+}
+
+body>a>button:hover{
+    cursor: pointer;
+    border: 1px solid aqua;
+    box-shadow: 1px 1px 10px 2px aqua;
+    border-radius: 30px;
+    color: white;
+}
+
+main {
+    width: 700px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+
+#img-contain {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-contain>img {
+    width: 100%;
+    height: 100%;
+}
+
+#btn-contain {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-contain>button {
+    width: 4rem;
+    height: 4rem;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    font-size: larger;
+    margin: 20px;
+    background-color: black;
+    color: lightgray;
+    box-shadow: 1px 1px 10px 3px aqua;
+    transition: 1s;
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+article {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    right: 29.9%;
+    top: 14.5%;
+}
+
+article>img {
+    width: 100%;
+    height: 100%;
+    border-radius: 200px;
+    animation: proanimate 0s linear 0s infinite;
+}
+
+.onanima {
+    animation: proanimate 1s linear 0s infinite;
+}
+
+@keyframes proanimate {
+    100% {
+        transform: rotate(360deg);
+    }
+
+    0% {
+        transform: rotate(0deg);
+    }
+}
